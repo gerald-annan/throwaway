@@ -16,7 +16,7 @@ defmodule ThrowawayWeb.Router do
 
   scope "/", ThrowawayWeb do
     pipe_through :browser
-    get "/hello", HelloController, :world
+    get "/hello/:name", HelloController, :world
     get "/", PageController, :index
   end
 
